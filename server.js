@@ -30,11 +30,11 @@ app.post('/', (req, res) => {
 
   // --- LOGICA PENTRU CURS VALUTAR --- 
 
-  if (intentName === 'Curs valutar - Suma (Euro)' || intentName === 'Curs valutar - Suma (Dolar)') { 
+  if (intentName.includes("Suma (Euro)") || intentName.includes("Suma (Dolar)")) { 
 
        
 
-      const lei = params.suma_lei; 
+      const lei = params.number; 
 
       let curs, moneda, simbol; 
 
