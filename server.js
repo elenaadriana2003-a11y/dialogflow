@@ -59,7 +59,10 @@ app.post('/', (req, res) => {
       } 
 
  
-
+      console.log(curs);
+      console.log(moneda);
+      console.log(simbol);
+      
       // Facem calculul 
 
       const rezultat = (lei / curs).toFixed(2); 
